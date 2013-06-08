@@ -6,7 +6,7 @@ html, body {
 }
 
 body{
-    background: url("../img/patterns/pattern6.png"); 
+    background: url("../img/patterns/pattern2.png"); 
 }
 
 
@@ -51,24 +51,34 @@ body{
 .wookmark-item {
     margin: 0;
     padding: 1px;
-    border: 1px solid #dedede;
+   /* border: 1px solid #dedede; */
     background-color: #ffffff;
-    -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-            border-radius: 2px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.wookmark-item:before {
+    
+    bottom: 3px;
+    content: '';
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    z-index: -1;
             
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px 3px rgba(0,0,0,0.33);
+       -moz-box-shadow: 0 1px 3px 3px rgba(0,0,0,0.33);
+            box-shadow: 0 1px 3px 3px rgba(0,0,0,0.33);
 }
 
 .wookmark-item img {
     display: block;
     margin: 0;
     width: 100%;
-    -webkit-border-radius: 2px 2px 0 0;
-       -moz-border-radius: 2px 2px 0 0;
-            border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+       -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
 }
 
 .wookmark-item .plane-text {

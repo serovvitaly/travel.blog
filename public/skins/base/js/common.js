@@ -3,7 +3,7 @@
 $(function(){
     
     $('.wookmark-item').wookmark({
-        offset: 5,
+        offset: 14,
         align: 'center',
         autoResize: true,
         resizeDelay: 50,
