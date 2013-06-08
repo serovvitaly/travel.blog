@@ -51,6 +51,7 @@ body{
 .wookmark-item {
     margin: 0;
     padding: 1px;
+    margin-bottom: 10px;
    /* border: 1px solid #dedede; */
     background-color: #ffffff;
     -webkit-border-radius: 3px;

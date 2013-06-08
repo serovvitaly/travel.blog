@@ -19,7 +19,20 @@ class BlogPostController extends BaseController {
     {
         $this->layout = NULL;
         
-        echo '<div class="span3 wookmark-item" style="position: absolute; left: 520px; top: 810px;">
+        $items = array();
+        
+        $posts = BlogPost::take(20)->where('status', '=', 4)->get();
+        
+        foreach ($posts AS $post) {
+            $items[] = array(
+                'id'    => $post->id,
+                'title' => $post->title,
+            );
+        }
+        
+        return json_encode($items);
+        
+        echo '<div class="span3 wookmark-item">
         
           <div>
             <img src="/vendor/jquery/plugins/wookmark/sample-images/image_5.jpg" alt="">

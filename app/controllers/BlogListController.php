@@ -8,7 +8,7 @@ class BlogListController extends BaseController {
 	{        
         $this->layout->title = '';
         
-		$this->layout->posts = BlogPost::take(20)->where('status', '=', 4)->get();
+		$this->layout->posts = BlogPost::take(50)->where('status', '=', 4)->get();
         
         $this->layout->content = '';
 	}

@@ -28,7 +28,8 @@
   <script src="/vendor/jquery/jquery-1.10.1.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="/vendor/jquery/plugins/scroll-pagination/scrollpagination.js"></script>
-  <script src="/vendor/jquery/plugins/wookmark/jquery.wookmark.min.js"></script>
+  <script src="/vendor/jquery/plugins/desandro/jquery.masonry.min.js"></script>
+  <!--script src="/vendor/jquery/plugins/wookmark/jquery.wookmark.min.js"></script-->
   <script src="/skins/base/js/common.js"></script>
   
 </body>
