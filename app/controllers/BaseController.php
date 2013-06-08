@@ -14,5 +14,14 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
+    
+    public function after()
+    {
+        if (!isset($this->layout->content)) {
+            $this->layout->content = 'lost';
+        }
+        
+        parent::after();
+    }
 
 }

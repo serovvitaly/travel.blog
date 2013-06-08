@@ -1,5 +1,12 @@
+html, body {
+    font-family: "Helvetica Neue", arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #211922;
+}
+
 body{
-    background: url("../img/patterns/pattern6.png");
+    background: url("../img/patterns/pattern6.png"); 
 }
 
 
@@ -38,3 +45,50 @@ body{
     
 }
 /* -- /profile -- */
+
+
+
+.wookmark-item {
+    margin: 0;
+    padding: 1px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+            
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wookmark-item img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    -webkit-border-radius: 2px 2px 0 0;
+       -moz-border-radius: 2px 2px 0 0;
+            border-radius: 2px 2px 0 0;
+}
+
+.wookmark-item .plane-text {
+    padding: 4px;
+    line-height: 14px;
+}
+
+.wookmark-item .plane-bottom {
+    padding: 4px;
+    font-size: 11px;
+    line-height: 14px;
+    border-top: 1px solid #ECECEC;
+}
+
+
+.loading{
+    height: 50px; 
+    width: 100px;
+    background: blue;
+    color: white;
+    margin: 10px auto;
+    display: none;
+}

@@ -11,7 +11,17 @@
 |
 */
  
+Route::group(array('prefix' => 'ajax'), function()
+{
+
+    Route::controller('blog', 'BlogPostController');
+
+});
+
+
+Route::controller('post/{id}', 'BlogPostController');
+
 Route::controller('profile', 'ProfileController');
  
-Route::controller('/', 'HomeController');
+Route::controller('/', 'BlogListController');
 
