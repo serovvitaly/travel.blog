@@ -9,6 +9,19 @@ body{
     background: url("../img/patterns/pattern2.png"); 
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
 
 .content-conteiner{
     background: #FFF;
@@ -25,6 +38,16 @@ body{
 
 
 /* -- profile -- */
+.profile-sider{
+    background: #FFF;
+    height: 800px;
+}
+.profile-sider .pfs-wrapper{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #E0E0E0;
+    height: 100%;
+}
 .profile-title{
     background: #262626;
     color: #FFF;
@@ -39,10 +62,15 @@ body{
     font-weight: normal;
 }
 .profile-header{
-    padding: 20px;
+    
 }
 .profile-header .pfh-panel{
     
+}
+
+.profile-body .pf-content{
+    background: #FFF;
+    padding: 20px;
 }
 /* -- /profile -- */
 
@@ -102,4 +130,120 @@ body{
     color: white;
     margin: 10px auto;
     display: none;
+}
+
+ 
+ 
+ 
+
+ 
+#moments h3 {
+  font-size: 1.0em;
+  font-weight: 200;
+  margin: 25px 0 0; 
+}
+
+#moments ul {
+  width: 2px;
+  margin: 60px auto;
+  position: relative; 
+}
+
+#moments ul li {
+  width: 2px;
+  background: rgba(79, 35, 39, 1);
+  position: relative; 
+}
+
+#moments ul li {
+  width: 2px;
+  height: 60px;
+  background: #969696;
+  position: relative;
+  margin-bottom: 14px; 
+}
+
+#moments ul li:last-child {
+  background: none; 
+}
+
+#moments ul li .dot {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #969696;
+  border-radius: 14px; 
+}
+#moments ul li .dot:after {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 6px; 
+}
+
+#moments ul li .momentBody {
+  position: absolute;
+  left: 30px;
+  top: -9px;
+  background: #FFFFFF;
+  text-align: left;
+  padding: 0 10px;
+  white-space: nowrap; 
+}
+#moments ul li .momentBody:hover {
+    border-bottom: none;
+    background: #FFFFC0; 
+}
+
+#moments ul li.odd .momentBody:hover:after {
+  border-right: 20px solid #FFFFC0; 
+}
+#moments ul li.odd .momentBody:after {
+  position: absolute;
+  content: ' ';
+  border-bottom: 24px solid transparent;
+  border-right: 20px solid #FFF;
+  top: 0;
+  left: -20px; 
+}
+
+#moments ul li.even .momentBody {
+  left: -100%; 
+}
+#moments ul li.even .momentBody:hover:after {
+    border-left: 20px solid #FFFFC0; 
+}
+#moments ul li.even .momentBody:after {
+    position: absolute;
+    content: ' ';
+    border-bottom: 24px solid transparent;
+    border-left: 20px solid #FFF;
+    top: 0;
+    right: -20px;
+}
+
+
+.timeline{
+    
+}
+.timeline .tl-item .message{
+    background: #FFF;
+    padding: 4px;
+    position: absolute;
+    top: -10px;
+    width: 150px;
+}
+.timeline .tl-item.to .message{
+    right: 15px;
+}
+.timeline .tl-item.from .message{
+    left: 15px;
 }

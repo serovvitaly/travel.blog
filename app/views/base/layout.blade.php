@@ -17,7 +17,7 @@
     
   
     <!--div class="container content-conteiner"-->
-    <div class="container-fluid" id="scroll-container">
+    <div class="container" id="scroll-container">
     @section('layout')
       <!-- layouts -->
     @show

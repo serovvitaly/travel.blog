@@ -23,5 +23,5 @@ Route::controller('post/{id}', 'BlogPostController');
 
 Route::controller('profile', 'ProfileController');
  
-Route::controller('/', 'BlogListController');
+Route::controller('/', 'IndexController');
 
